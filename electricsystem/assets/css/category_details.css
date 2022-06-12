@@ -1,0 +1,39 @@
+.category-header {
+	display: block;
+
+}
+
+.category-title {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 48px;
+}
+
+.category-image {
+    margin-right: 20px;
+}
+
+.category-body {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.category-date {
+    float: right;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.category-line {
+    margin-left: 20px;
+    margin-right: 20px;
+	border-bottom: 2px solid brown;
+}

@@ -1,0 +1,516 @@
+html {
+	height: 100%;
+}
+
+body, button, table, td, tr, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	/*line-height: 1;*/
+	background: #E6E6FA;
+	height: 100%;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	background: #E6E6FA;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-wrapper {
+	/*width: 100%;*/
+	border-bottom: 5px solid brown;
+	background: #1E90FF;
+	padding: 10px 10px;
+}
+
+.header {
+	/*width: 100%;
+	height: 100px;
+	margin: 0 auto;
+	box-sizing: border-box;*/
+	display: flex;
+}
+
+.header-image {
+	height: 100px;
+	float: left;
+}
+
+.header-title {
+	display: flex;
+	font-weight: bolder;
+	font-size: 6vw;
+	color: #b22222;
+    padding-top: 10px;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.header-button {
+	/*display: flex;*/
+	float: right;
+}
+
+
+a.login-button {
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+	color: #ffffff;
+	background-color: #1E90FF;
+	display: flex;
+	justify-content: center;
+}
+
+a:hover.login-button {
+	background-color: #0066ca;
+
+}
+
+a.password-button {
+    padding: 12px;
+    margin: 10px 0px 10px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+	color: #ffffff;
+	background-color: #1E90FF;
+	display: flex;
+	justify-content: center;
+}
+
+a:hover.password-button {
+	background-color: #0066ca;
+
+}
+
+a.logout-button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+	color: #ffffff;
+	background-color: #1E90FF;
+	display: flex;
+	justify-content: center;
+}
+
+a:hover.logout-button {
+	background-color: #0066ca;
+
+}
+
+.alert-login {
+    /*width: 100%;*/
+	border: none;
+	color: white;
+	margin: 10px 0px 0px 0px;
+	padding: 15px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+.alert-message {
+    width: 50%;
+	border: none;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.alert-message-success {
+	background-color: #02b95d;
+}
+
+.alert-message-success:hover {
+	background: #02b95d;
+}
+
+.alert-message-danger {
+	background-color: #c70e00;
+}
+
+.alert-message-danger:hover {
+	background: #c70e00;
+}
+
+
+
+.alert-danger {
+	background-color: #c70e00;
+}
+
+.alert-danger:hover {
+	background: #c70e00;
+}
+
+.login-form {
+	width: 60%;
+	margin-top: 0px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-form input[type=text], input[type=email], input[type=password] {
+	display: block;
+	width: 100%;
+	padding: 12px 20px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.login-form span {
+	margin: 0px;
+}
+
+.login-form .title {
+	margin: 10px 0px 10px 0px;
+	border: 0px;
+	font-weight: bolder;
+}
+
+.login-form .errors {
+	width: 100px;
+	margin: 0px 0px 10px 0px;
+	border: 0px;
+	color: #d40000;
+}
+
+.login-form .login-button {
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0px 10px 0px;
+	border: 0px;
+	background-color: #02b95d;
+	color: #ffffff;
+	outline: none;
+}
+
+.login-form .login-button:hover {
+	color: #ffffff;
+	background-color: #01793d;
+	border: 0px;
+}
+
+.login-form .login-cancel-button {
+	width: 100%;
+	padding: 12px;
+	margin: 10px 0px 10px 0px;
+	border: 0px;
+	background-color: #ec0c4c;
+	color: #ffffff;
+	outline: none;
+	display: none;
+}
+
+.login-form .login-cancel-button:hover {
+	color: #ffffff;
+	background-color: #7b0426;
+	border: 0px;
+}
+
+
+.search-content {
+	width: 100%;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 15px 20px; */
+    cursor: pointer;
+    font-size: 1.5vw;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.search-error {
+	font-size: 1.5vw;
+	display: block;
+	justify-content: center;
+	box-sizing: border-box;
+	margin-bottom: 0px
+}
+
+.search-error p {
+	font-size: 1.5vw;
+	display: block;
+	justify-content: center;
+	box-sizing: border-box;
+	margin-bottom: 0px
+}
+
+form.search-category-form input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	outline: none;
+	background: #f1f1f1;
+}
+
+form.search-category-form button {
+	float: left;
+	padding: 10px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	outline: none;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+}
+
+form.search-category-form button:hover {
+	background: #0b7dda;
+}
+
+.content {
+	width: 100%;
+	color: #dc2424;
+	float: right;
+    justify-content: flex-start;
+	font-size: 3vw;
+    padding: 0px;
+    display: block;
+	margin-top: 0px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.content h1 {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+.articles-table {
+	font-size: 2vw;
+	width: 100%;
+}
+
+.articles-table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.articles-table tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+.articles-table th {
+  color: white;
+  background-color: black;
+}
+
+.content-image {
+	float: left;
+	margin-left: 40px;
+}
+
+.register-form {
+	float: right;
+	margin-top: 20px;
+	/*background-color: #A81213;*/
+}
+
+.register-form strong {
+	text-align: center;
+	float: right;
+}
+
+.register-form td input {
+	float: right;
+}
+
+.register-form input {
+	width: 250px;
+	height: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+.register-form select {
+	width: 272px;
+	padding: 12px;
+	margin: 2px 0px 3px 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+.register-form button {
+	width: 272px;
+	padding: 12px;
+	margin-left: 84px;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+.register-form button:hover {
+	color: #ffffff;
+	background-color: #1E90FF;
+}
+
+.register-form h2 {
+	color: #fec722;
+	justify-content: center;
+	font-size: 2em;
+	padding: 20px;
+	font-family: Comic Sans MS;
+	display: flex;
+}
+
+
+.link-pagination {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #000000;
+  display: inline-block;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #1E90FF;
+  color: white;
+  border: 1px solid #000000;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #cccccc;}
+
+
+
+.footer {
+	/*width: 100%;*/
+	height: 50px;
+	padding: 10px;
+	border-top: 5px solid brown;
+	clear: both;
+	background: #1E90FF;
+}
+
+.footer h2 {
+	padding: 10px;
+	margin-top: 20px;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 850px) {
+	/**
+	 * Title Header
+	 *
+	 */
+	.header-title {
+		display: flex;
+		font-weight: bolder;
+	font-size: 5vw;
+		color: #b22222;
+	    padding-top: 10px;
+	    justify-content: center;
+	}
+
+	.header-image {
+	height: 15vw;
+	float: left;
+}
+
+	/**
+	 * Search Content
+	 */
+	.search-content {
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		box-sizing: border-box;
+		margin-bottom: 10px
+	}
+	.search-error {
+		font-size: 16px;
+		display: block;
+		justify-content: center;
+		box-sizing: border-box;
+		margin-bottom: 0px
+	}
+	.search-error p {
+		font-size: 16px;
+		display: block;
+		justify-content: center;
+		box-sizing: border-box;
+		margin-bottom: 0px
+	}
+
+
+	/**
+	 * Table Content
+	 *
+	 */
+	.content {
+		width: 100%;
+		color: #dc2424;
+		float: right;
+	    justify-content: flex-start;
+		font-size: 30px;
+	    padding: 0px;
+	    display: block;
+		margin-top: 0px;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content h1 {
+		width: 100%;
+		display: flex;
+	    justify-content: center;
+	    font-size: 30px;
+	    margin-bottom: 10px;
+	}
+	.articles-table {
+		font-size: 24px;
+		width: 100%;
+	}
+
+}
